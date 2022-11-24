@@ -255,11 +255,11 @@ p {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	cursor: pointer;
 }
-.modal__icon {
+.modal__icon-close {
 	fill: rgba(0, 0, 0, 1);
 	transition: fill 250ms var(--timing-function);
 }
-.modal-icon:hover {
+.modal__icon-close:hover {
 	fill: var(--accent-color);
 }
 .modal__form {
@@ -786,10 +786,10 @@ img {
 	justify-content: center;
 	margin-bottom: 50px;
 }
-.filter-list {
+.filter__list {
 	margin-right: 8px;
 }
-.filter-list:last-child {
+.filter__list:last-child {
 	margin-right: 0;
 }
 .card-set {
@@ -798,24 +798,24 @@ img {
 	gap: 30px;
 }
 
-.card {
+.card-set__list {
 	flex-basis: calc((100% - 60px) / 3);
 }
-.card-link {
+.card-set__link {
 	display: block;
 }
-.card-link:hover {
+.card-set__link:hover {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.card-link:hover .overlay-card {
+.card-set__link:hover .card-set__overlay {
 	transform: translateY(0);
 }
-.card-thumb {
+.card-set__thumb {
 	position: relative;
 	overflow: hidden;
 }
-.overlay-card {
+.card-set__overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -828,7 +828,7 @@ img {
 	background-color: rgba(33, 150, 243, 0.9);
 	transition: 250ms var(--timing-function);
 }
-.overlay-description {
+.card-set__overlay-description {
 	font-family: "Roboto";
 	font-weight: 400;
 	font-size: 18px;
@@ -836,12 +836,12 @@ img {
 	letter-spacing: 0.03em;
 	color: var(--white-color);
 }
-.wrapper {
+.card-set__wrapper {
 	padding: 20px 24px 20px 24px;
 	border: 1px solid #eeeeee;
 	border-top: 0;
 }
-.title-portfolio {
+.card-set__title {
 	color: var(--title-color);
 	font-weight: 700;
 	font-size: 18px;
@@ -849,7 +849,7 @@ img {
 	letter-spacing: 0.06em;
 	margin-bottom: 4px;
 }
-.projects-item {
+.card-set__projects {
 	color: var(--primary-text-color);
 	font-weight: 400;
 	font-size: 16px;
