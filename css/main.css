@@ -820,6 +820,15 @@ summary {
   width: 270px;
 }
 
+.section__title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 .section-about {
   padding-top: 0;
 }
