@@ -1,0 +1,27 @@
+.header {
+	background-color: var(--white-color);
+	border-bottom: 1px solid #ececec;
+}
+.header__container {
+	display: flex;
+}
+.logo {
+	display: block;
+	color: var(--accent-color);
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+}
+.header__logo {
+	margin-right: 93px;
+}
+.logo__span {
+	color: var(--title-color);
+	transition: color 250ms var(--timing-function);
+}
+.logo__span--color:hover,
+.logo__span--color:focus {
+	color: var(--accent-color);
+}
